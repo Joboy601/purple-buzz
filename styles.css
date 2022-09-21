@@ -1,0 +1,406 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+nav{
+  background-color: white;
+  border-bottom: 10px solid white;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+}
+#buzz{
+  color: violet;
+}
+#logo{
+  width: 30px;
+  margin-right: 10px ;
+}
+
+.hamburger-menu-list a{
+  text-decoration: none;
+  color: grey;
+  cursor: pointer;
+}
+.hamburger-menu-list a:hover{
+  color: white;
+}
+.hamburger-menu-list{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.full-svg{
+  display: none;
+}
+.hamburg-menu{
+  display: none;
+  transition: 0.3s;
+}
+.nav-svg>svg{
+  width: 20px;
+}
+.nav-li{
+  margin-bottom: 5px;
+  margin-bottom: 5px;
+  list-style: none;
+}
+.nav-li:hover{
+  background-color: purple;
+  text-align: center;
+  width: 30%;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  transition: ease-in;
+}
+.nav-svg{
+  display: flex;
+  justify-content:space-around;
+  color: purple;
+}
+.bell-svg:hover{
+  animation: mover 1s infinite  alternate;
+}
+@keyframes mover {
+  0% { transform: translateX(10px); }
+  100% { transform: translateX(-10px); }
+}
+
+.bars{
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+main{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.slide-1{
+  position: relative;
+}
+.slide-img{
+  width: 100%;
+}
+.left-arrow{
+  width: 60px;
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  color: purple;
+  z-index: 2;
+}
+.right-arrow{
+  position: absolute;
+  z-index: 2;
+  width: 60px;
+  right: 7%;
+  color: purple;
+  top: 40%;
+}
+.slide-img-info{
+  position: absolute;
+  top:36%;
+  left:30%;
+  width: 50%;
+  color: violet;
+  animation: slide 8s infinite alternate;
+} 
+
+@keyframes slide {
+  0% { transform: translateX(-700px); }
+  100% { transform: translateX(300px);}
+}
+
+.gift-svg{
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 70px;
+}
+
+.service{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-2{
+  background-color: blueviolet;
+  padding: 50px 0;
+  color: white;
+}
+ .all{
+  background-color: purple;
+  padding: 6px 15px;
+  border-radius: 10px;
+}
+
+.p-div p:hover:not(.all){
+  background-color: purple;
+  padding: 6px 15px;
+  border-radius: 10px;
+}
+.p-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+img{
+  width: 100%;
+}
+.section-3{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ui img{
+  border-radius: 15px;
+}
+.ui-info{
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  border-radius: 10px;
+}
+.ui{
+  width: 80%;
+  position: relative;
+}
+.section-3 button {
+  border: none;
+}
+.btn-link{
+outline: solid 1px white;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 10px;
+}
+.p-info-section-3{
+  width:80%;
+  margin-top: 5px;
+  color: white; 
+  font-weight: bold;
+}
+.i{
+  filter: brightness(50%);
+  /* animation: mover 1s infinite  alternate; */
+}
+.i:hover{
+  filter: brightness(100%);
+  /* animation: mover 1s infinite  alternate; */
+}
+.section-4{
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 200px;
+}
+.box-svg{
+  width: 40px;
+  color: white;
+}
+
+.vw-btn{
+  margin: 5px 0;
+  padding: 10px ;
+  border: none;
+  border-radius: 15px;
+  background-color: lightblue;
+}
+.recent-works-wrapper{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.recent-img{
+  border-radius: 15px;
+  filter: blur(5px);
+ 
+}
+.recent-img:hover{
+  filter: brightness(100%);
+}
+.recent-works{
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.recent-works{
+  position: relative;
+}
+
+.section-5-info{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: 200;
+}
+.section-6{
+background-color: purple;
+padding: 20px;
+color: white;
+}
+.social-icons{
+  margin-top: 20px;
+}
+.menu-list{
+  display: none;
+}
+.f{
+  width: 30px;
+  background-color: white;
+  padding: 7px 4px;
+  border: none;
+  font-size: 1.2rem;
+}
+.chevron-left{
+  width: 18px;
+}
+.ourCompany{
+  margin: 20px 0;
+}
+.section-6 a{
+  text-decoration: none;
+  color: white;
+}
+.section-6 a:hover{
+  color: grey;
+}
+.section-6-svg{
+  display: flex;
+}
+.client-svg{
+  width: 30px;
+  margin-right: 10px;
+}
+.client-body{
+  display: flex;
+  align-items: center;
+}
+footer{
+  background-color: darkblue;
+  height: 100px;
+}
+.footer{
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+#me{
+  font-weight: 1000;
+}
+
+.block{
+  display: block;
+}
+
+                              /* Media Queries */
+@media only screen and (min-width:780px) {
+  .section-3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 50px;
+    grid-row-gap:10px;
+  }
+  .recent-works-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin-left: 50px;
+  }
+  .section-6{
+    display: flex;
+    justify-content: space-around;
+  }
+  .ourCompany{
+    width: 25%;
+  }
+  .hamburger{
+    display: none;
+    margin-right: 0;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .menu-list{
+    display: flex;
+  }
+  .menu-list a{
+    text-decoration: none;
+    color: gray;
+  }
+  .menu-list li{
+    list-style-type: none;
+    margin-right: 20px;
+  }
+  .menu-list-item:hover{
+    background-color: purple;
+    text-align: center;
+    /* width: 30%; */
+    padding: 5px;
+    border-radius: 20px;
+    transition: ease-in;
+  }
+  .menu-list-item a:hover{
+    color: white;
+  }
+  .full-svg{
+    display: flex;
+  }
+  .full-svg svg{
+    display: flex;
+    width: 30px;
+    margin-right: 10px;
+    color: purple;
+  }
+  .hamburg-menu{
+    display: none;
+  }
+  .gift-svg{
+    width: 20%;
+  }.slide-img-info{
+    position: absolute;
+    top:44%;
+    left:30%;
+    width: 50%;
+    color: violet;
+    margin: 0 auto;
+    animation: slide 8s infinite ease-in;
+  } 
+  
+  @keyframes slide {
+    0% { transform: translateX(-900px); }
+    100% { transform: translateX(1000px);}
+  }
+}
